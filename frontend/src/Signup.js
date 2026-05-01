@@ -29,18 +29,15 @@ function Signup() {
   };
 
   return (
-    <div>
-      <h2>Signup</h2>
-      <form onSubmit={handleSubmit}>
-        <input name="name" placeholder="Name" onChange={handleChange} />
-        <br />
-        <input name="email" placeholder="Email" onChange={handleChange} />
-        <br />
-        <input name="password" type="password" placeholder="Password" onChange={handleChange} />
-        <br />
-        <button type="submit">Signup</button>
-      </form>
-    </div>
+    <div className="card">
+  <h2>Signup</h2>
+  <form onSubmit={handleSubmit}>
+    <input name="name" placeholder="Name" onChange={handleChange} />
+    <input name="email" placeholder="Email" onChange={handleChange} />
+    <input name="password" type="password" placeholder="Password" onChange={handleChange} />
+    <button type="submit">Signup</button>
+  </form>
+</div>
   );
 }
 

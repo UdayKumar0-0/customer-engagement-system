@@ -5,18 +5,16 @@ import Dashboard from "./Dashboard";
 
 function App() {
   return (
-    <div style={{ padding: "20px", fontFamily: "Arial" }}>
-      <h1>Customer Engagement System</h1>
+    <div className="container">
+      <h1>Customer Engagement</h1>
 
-      <Signup />
-      <hr />
-
-      <Login />
-      <hr />
+      <div className="grid">
+        <Signup />
+        <Login />
+      </div>
 
       <Dashboard />
     </div>
   );
 }
-
 export default App;
